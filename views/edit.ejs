@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Item</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <section>
@@ -17,8 +18,10 @@
                         <form action="/edit/update/<%= item._id%>" method="POST">
                             <label for="textinput">Input Text</label>
                             <input type="text" name = "textinput" value = "<% item.textinput %>">
+                            <br>
                             <label for="numinput">Input Number</label>
                             <input type="number" name = "numinput" value = "<% item.numinput %>">
+                            <br>
                             <button type="submit">Confirm</button>
                             <a href="/">Cancel</a>
                         </form>
